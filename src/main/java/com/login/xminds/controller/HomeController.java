@@ -1,16 +1,20 @@
-package com.test.test.controller;
+package com.login.xminds.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-
-@RestController
+/**
+ * The Home Controller.
+ */
+@Controller
 public class HomeController {
 
-
+    /**
+     * Swagger home.
+     * @return swagger-ui.html
+     */
     @RequestMapping("/")
     public String home() {
-        return "new";
+        return "redirect:swagger-ui.html";
     }
 }
